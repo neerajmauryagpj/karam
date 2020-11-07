@@ -1,0 +1,433 @@
+:root{
+    --green:#90c541;
+    --red:#ed3237;
+    --orange:orange;
+    --white:#ddd;
+    --darkblue:#020e26;
+}
+html{
+    font-size: 16px;
+}
+body{
+    box-sizing: content-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bg{
+    background: var(--darkblue)
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: var(--darkblue);
+    align-items: center;
+    justify-content: center;
+}
+.logo,.name{
+    text-align: center;
+    padding: 10px 10px;
+}
+.name h3{
+    color: var(--red);
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-variant: small-caps;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar-toggler{
+    border: 1px solid red !important;
+    background: var(--red);
+}
+.navbar-nav{
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+.nav-item{
+    padding: 0 10px ;
+}
+.active{
+    color: var(--red) !important;
+}
+.nav-link{
+    font-size: 18px;
+    color:var(--white) !important;
+}
+.nav-link:hover{
+    color: var(--red) !important;
+}
+
+.center{
+    text-align: center;
+}
+/* about section */
+.heading{
+    padding: 10px 15px;
+    color: var(--red);
+    /* background: var(--green); */
+    letter-spacing: 1px;
+}
+.heading h1{
+    font-size: 1.6rem !important;
+}
+.content{
+    padding: 10px 0;
+}
+.content p{
+    font-size: 1.2rem;
+    padding: 0 15px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+.industry{
+    /* padding: 30px 0px; */
+    background: var(--green);
+    background: url("../images/bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg-transparent{
+    height: 100%;
+    width: 100%;
+    padding: 30px 0px;
+    background:rgba(0, 0, 0,0.7) !important;
+}
+.industry div .card{
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+.industry .heading,.services .header{
+    text-align: center;
+    color: #ddd;
+}
+.industry div .card{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.industry div .card h3{
+    text-align: center;
+    padding: 20px 0 0 0;
+    color: var(--green);
+}
+.services{
+    /* border-bottom: 10px solid rgba(0, 0, 0,0.3); */
+    padding: 20px 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0,0.9);
+}
+.services>.row{
+    justify-content: center;
+}
+.services >.row .card{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: var(--darkblue);
+}
+.services>p{
+    text-align: center;
+    margin: 0 30px;
+}
+.card i{
+    font-size: 4rem;
+    padding: 20px;
+    color: var(--red);
+
+}
+
+.card-body h3{
+    font-weight: 600;  
+    letter-spacing: 1px;
+    margin: 20px;
+    color: var(--red);
+}
+.card-body p{
+    color: var(--white);
+    font-size: 1.1rem;
+}
+footer{
+    padding: 20px;
+    background: var(--darkblue);
+    border-top: 2px solid rgba(0, 0, 0,0.2);
+}
+.footer-bx{
+    margin: 10px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top:2px solid rgba(0, 0, 0,0.2);
+}
+.footer-bx h3{
+    color:var(--white);
+}
+.footer-bx ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color:var(--white);
+    font-size: 1.1rem;
+}
+.footer-bx ul li a{
+    color: var(--white);
+    font-size: 1.1rem;
+}
+.developer-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    background: var(--darkblue);
+    color: var(--white);
+    font-size: 1.3rem;
+    border: 1px solid rgba(0, 0, 0,0.3);
+}
+#toggle{
+    display: none;
+}
+@media screen and (max-width:768px){
+    #logo{
+        display: none;
+    }
+    #toggle{
+        display: block;
+        height: 50px;
+        width: 80px;
+    }
+    .name h3{
+        font-size: 30px;
+    }
+
+}
+
+/* About page css
+############################# */
+.main-heading{
+    background: url("../images/aboutus.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+
+}
+.main-heading>div{
+    background: rgba(0, 0, 0,0.7);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-heading div h1{
+    color: var(--white);
+}
+.about>div{
+    padding: 20px;
+    font-size: 1.2rem;
+}
+.about>div>p span{
+    color: var(--red);
+    font-weight: 600;
+}
+.about>div>img{
+    width: 100%;
+}
+.headline{
+    width: 100%;
+    height: 60px;
+    margin: 40px 0;
+    padding: 10px;
+    background-color: var(--darkblue);
+}
+.headline h1{
+    color:var(--white)
+}
+.founders>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.founders>div p{
+    font-size: large;
+}
+.founders>div h3{
+    text-align: center;
+    color: var(--red);
+}
+.our-mission{
+    background: lightgray;
+    padding: 20px;
+}
+.our-mission h1{
+    color: var(--red);
+}
+.our-mission p{
+    color: rgba(0, 0, 0);
+    font-size: large;
+}
+.our-vision{
+    background: rgba(69, 41, 224,0.5);
+    padding: 20px;
+}
+.our-vision h1{
+    color: var(--red);
+}
+.our-vision p{
+    color:rgba(69, 41, 224);
+    font-size: large;
+}
+.quality-policy{
+    background:rgba(2,14,38,0.5);
+    padding: 20px;
+}
+.quality-policy h1{
+    color: var(--red);
+}
+.quality-policy div p,.quality-policy div li{
+    color:rgba(255,255,255,0.8);
+    font-size: large;
+}
+
+@media screen and (max-width:576px){
+.history img{
+    width: 100%;
+}
+}
+@media screen and (max-width:768px){
+    .about{
+        flex-direction: column-reverse;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+}
+
+/* LOGIN PAGE
+######################## */
+.login{
+    justify-content: center;
+    padding: 20px;
+}
+.login form{
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255,0.3);
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255,0.3);
+}
+.userlogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userlogo img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.form-group label{
+    color: var(--white);
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:576px){
+    .login{
+        padding: 10px 0;
+    }
+    .login form{
+        padding: 10px;
+    }
+}
+/* PRODUCTS
+##################  */
+.prod-heading{
+    background: var(--darkblue);
+    padding: 10px;
+}
+.prod-heading h1{
+    color: var(--white);
+}
+.protections{
+    padding: 10px 20px;
+}
+.protections p{
+    font-size: large;
+}
+.protections .card{
+    margin: 0 auto;
+}
+.protections .card img{
+    width: 100%;
+    height: auto;
+}
+.protections .card-body h1{
+    text-align: center;
+    font-size: x-large;
+}
+.protections .card:hover{
+    box-shadow: 0 0 2px rgba(0, 0, 0,0.7);
+    
+}
+.protections .card:hover .card-body{
+    color: var(--white);
+    background: var(--darkblue);
+
+}
+
+.jobs{
+    height: 400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Contact us 
+###############################*/
+.contact{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding: 50px;
+}
+.address,.message{
+    border-top: 5px solid var(--darkblue);
+    padding: 50px;
+    box-shadow: 0 0 5px;
+}
+.address div .fa{
+    width: 40px;
+    height: 40px;
+    font-size:1.5rem
+}
+.address div span{
+    font-size:1.5rem;
+    font-weight:600;
+}
+.address div p{
+    padding-left: 50px;
+    font-size:large
+}
+button{
+    letter-spacing: 2px;
+    font-size:large;
+    font-weight:700;
+}
+@media screen and (max-width:768px){
+    .contact{
+        padding:10px;
+    }
+    .address,.message{
+        padding:20px;
+    }
+}
